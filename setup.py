@@ -6,7 +6,7 @@ with open("README.md") as f:
 
 setup(
     name="pycamera",
-    version="0.2",
+    version="0.2.1",
     description="An easier solution to computer vision.",
     long_description=readme,
     long_description_content_type="text/markdown",
