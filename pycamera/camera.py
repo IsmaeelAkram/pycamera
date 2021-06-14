@@ -1,5 +1,5 @@
 import cv2
-import frame
+from .frame import Frame
 
 
 class Camera:
@@ -10,5 +10,5 @@ class Camera:
     def snap(self, delay: float = 0, count: int = 30):
         ret, frame = None, None
         for i in range(count):
-            ret, frame = self.cap.read()
-        return Frame(frame)
+            ret, img = self.cap.read()
+        return Frame(img)

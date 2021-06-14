@@ -11,3 +11,9 @@ class Frame:
 
     def rgb(self):
         return cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB)
+
+    def show(self):
+        cv2.imshow("pycamera frame", self.frame)
+
+    def save(self, fp: str):
+        cv2.imwrite(fp, self.frame)
