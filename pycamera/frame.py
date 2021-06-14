@@ -18,10 +18,6 @@ class Frame:
         """Returns a PIL (Pillow) compatible image. Alias of rgb()"""
         return self.rgb()
 
-    def show_loop(self):
-        while True:
-            cv2.imshow("pycamera frame", self.frame)
-
     def show(self):
         cv2.imshow("pycamera frame", self.frame)
 
