@@ -17,6 +17,6 @@ class Camera:
         return Frame(img)
 
     def read(self):
-        """"""
+        """Reads camera; better for loops. If taking a singular picture, use snap() to fix lighting/exposure."""
         ret, frame = self.cap.read()
         return Frame(frame)
