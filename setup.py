@@ -1,7 +1,7 @@
 from setuptools import setup
 
 readme = ""
-with open("README.md") as f:
+with open("README-pypi.md") as f:
     readme = f.read()
 
 setup(
