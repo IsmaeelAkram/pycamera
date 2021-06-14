@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="pycamera",
-    version="0.1",
+    version="0.2",
     description="An easier solution to computer vision.",
     url="https://github.com/IsmaeelAkram/pycamera",
     author="Ismaeel Akram",
