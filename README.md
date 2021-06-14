@@ -4,7 +4,7 @@ An easier solution to computer vision.
 
 ## What is pycamera?
 
-PyCamera is a computer vision library for people who, don't know how to use OpenCV, don't want to use OpenCV for such a simple project, or want something easier!
+PyCamera is a computer vision library for people who don't know how to use OpenCV, don't want to use OpenCV for such a simple project, or want something easier!
 
 ## Installation
 
