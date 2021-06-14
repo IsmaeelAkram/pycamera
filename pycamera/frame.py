@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import PIL
+from PIL import Image as PILImage
 
 
 class Frame:
@@ -15,9 +15,9 @@ class Frame:
         """Converts BGR frame to RGB"""
         return Frame(cv2.cvtColor(self.frame, cv2.COLOR_BGR2RGB))
 
-    def to_pillow(self) -> PIL.Image:
+    def to_pillow(self) -> PILImage:
         """Returns a PIL (Pillow) compatible image. Alias of rgb()"""
-        return PIL.Image.fromarray(self.rgb().to_numpy())
+        return PILImage.fromarray(self.rgb().to_numpy())
 
     def show(self):
         cv2.imshow("pycamera frame", self.frame)

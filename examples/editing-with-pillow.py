@@ -6,5 +6,6 @@ snap = cam.snap()  # Snap photo
 image = snap.to_pillow()  # Convert pycamera image to Pillow image
 
 draw = ImageDraw.Draw(image)
-# Draw stuff here
+white = (255, 255, 255)
+draw.ellipse([(10, 10), (100, 100)], width=3, fill=white, outline=white)  # Draw circle
 image.show()
