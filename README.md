@@ -30,7 +30,7 @@ snap.save("output.jpg") # Save picture to output.jpg
 
 ```python
 from pycamera import camera
-from PIL import Image, ImageDraw
+from PIL import ImageDraw
 
 cam = camera.Camera(0) # Choosing a camera
 snap = cam.snap() # Snap photo
