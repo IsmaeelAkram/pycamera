@@ -1,5 +1,9 @@
 from setuptools import setup
 
+readme = ""
+with open("README") as f:
+    readme = f.read()
+
 setup(
     name="pycamera",
     version="0.2",
