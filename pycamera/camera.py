@@ -8,6 +8,7 @@ class Camera:
         self.cap = cv2.VideoCapture(self.device_index)
 
     def snap(self, delay: float = 0, count: int = 30):
+        """Snaps a picture from the camera"""
         ret, frame = None, None
         for i in range(count):
             ret, img = self.cap.read()
