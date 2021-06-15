@@ -9,16 +9,16 @@ class Camera:
         self.cap = cv2.VideoCapture(self.device_index)
 
     def set_resolution(self, w: int, h: int):
-        """ Set camera resolution """
+        """Set camera resolution"""
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, w)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, h)
 
     def set_fps(self, fps: int):
-        """ Set camera frames per second (FPS) """
+        """Set camera frames per second (FPS)"""
         self.cap.set(cv2.CAP_PROP_FPS, fps)
 
     def set(self, k: int, v):
-        """ Set a value from OpenCV """
+        """Set a value from OpenCV"""
         self.cap.set(k, v)
 
     def snap(self, delay_seconds: float = 0, count: int = 30):
