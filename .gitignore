@@ -5,3 +5,4 @@ __pycache__/
 *.swp
 dist/
 .DS_Store
+*.test.py
