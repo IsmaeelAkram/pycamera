@@ -20,7 +20,9 @@ class Camera:
     def set_fps(self, fps: int):
         """Set camera frames per second (FPS)"""
         if fps <= 0:
-            raise ZeroFramesError
+            raise ZeroFramesError(
+                "Cannot show 0 FPS. If you want a single frame, use snap() instead"
+            )
         self.cap.set(cv2.CAP_PROP_FPS, fps)
 
     def set(self, k: int, v):
